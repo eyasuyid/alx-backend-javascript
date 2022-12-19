@@ -76,3 +76,5 @@ module.exports = {
   ]
 };
 EOF
+npm i
+
