@@ -3,7 +3,9 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
+    // this may need comment
     const task = true;
+    // this may need a commet to
     const task2 = false;
   }
 
