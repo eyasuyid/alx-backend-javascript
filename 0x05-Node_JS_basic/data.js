@@ -17,10 +17,12 @@ const countStudents = (dataPath) => {
     .toString('utf-8')
     .trim()
     .split('\n');
+  console.log(fileLines);
   const studentGroups = {};
   const dbFieldNames = fileLines[0].split(',');
+  console.log(dbFieldNames);
   const studentPropNames = dbFieldNames.slice(0, dbFieldNames.length - 1);
-
+  console.log(studentPropNames);
   for (const line of fileLines.slice(1)) {
     const studentRecord = line.split(',');
     const studentPropValues = studentRecord.slice(0, studentRecord.length - 1);
@@ -43,4 +45,4 @@ const countStudents = (dataPath) => {
   }
 };
 
-module.exports = countStudents;
+countStudents('database.csv');

@@ -1,14 +1,13 @@
-const _log = (msg) => process.stdout.write(msg);
-
-_log('Welcome to Holberton School, what is your name?\n');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('readable', () => {
-  const name = process.stdin.read();
-  if (name != null) {
-    _log(`Your name is: ${name}`);
+  const chunk = process.stdin.read();
+
+  if (chunk) {
+    process.stdout.write(`Your name is: ${chunk}`);
   }
 });
 
 process.stdin.on('end', () => {
-  _log('This important software is now closing\n');
+  process.stdout.write('This important software is now closing\n');
 });
