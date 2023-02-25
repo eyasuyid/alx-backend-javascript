@@ -10,5 +10,5 @@ process.stdin.on('readable', () => {
 });
 
 process.stdin.on('end', () => {
-  _log('This important software is now closing');
+  _log('This important software is now closing\n');
 });
