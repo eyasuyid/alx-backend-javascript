@@ -1,4 +1,4 @@
-import displayMessage from '../../0-console'
+const displayMessage = require('../../0-console');
 
 describe("0-console.js", () => {
     test('display the para message', () => {
