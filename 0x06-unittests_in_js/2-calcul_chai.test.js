@@ -1,12 +1,13 @@
 const expect = require('chai').expect;
 const cal = require('./1-calcul');
 
-describe('Module 1-calcul', function () {
+describe('Module 2-calcul', function () {
 
   describe('SUM TYPE', function () {
     it('test sum of numbers', function () {
       expect(cal('SUM', 2, 1)).to.equal(3);
     });
+
     it('test sum of rounded float', function () {
       expect(cal('SUM', 1.6, 2.1)).to.equal(4);
     });
@@ -24,7 +25,7 @@ describe('Module 1-calcul', function () {
 
   describe('DIVIDE TYPE', function () {
     it('test division of numbers', function () {
-      expect(cal('DIVIDE', 4, 2)).to.equal(2);
+      expect(cal('DIVIDE', 4, 3)).to.equal(4/3);
     });
 
     it('test divided by zero', function () {
