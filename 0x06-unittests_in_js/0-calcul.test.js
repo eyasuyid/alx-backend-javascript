@@ -20,4 +20,11 @@ describe('0-calcul module test', function () {
     assert.equal(sum(true, '1'), 2);
   });
 
+  it('calculateNumber: not Number parms', function () {
+    assert.throws(() => sum('hello'), {
+      name: 'TypeError',
+      message: 'Parameters must be numbers'
+    });
+  });
+
 });
