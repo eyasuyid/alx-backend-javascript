@@ -1,6 +1,6 @@
 const assert = require('assert');
 const calcul = require('./0-calcul');
-const sum = calcul.calculateNumber;
+const sum = calcul;
 
 describe('0-calcul module test', function () {
 
