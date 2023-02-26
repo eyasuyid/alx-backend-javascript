@@ -16,8 +16,8 @@ describe('0-calcul module test', function () {
     assert.equal(sum(1.9, 10), 12);
   });
 
-  it('calculateNumber: one parameter sum', function () {
-    assert.equal(sum(2), 2);
+  it('calculateNumber: cast none Numbers', function () {
+    assert.equal(sum(true, '1'), 2);
   });
 
 });
